@@ -79,28 +79,10 @@
         <entry file="file://$PROJECT_DIR$/pl.agh.edu.soa.lab1-ejb/src/main/java/controllers/Conroller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="24" column="42" lean-forward="true" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+              <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/src/models/Student.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/src/models/University.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -120,6 +102,9 @@
       <find>base</find>
       <find>gets</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -162,6 +147,7 @@
     <option name="width" value="927" />
     <option name="height" value="1053" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -185,7 +171,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557171572141" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557171895779" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SOAp" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -267,12 +253,12 @@
       <workItem from="1557015506601" duration="604000" />
       <workItem from="1557076150767" duration="1905000" />
       <workItem from="1557139068953" duration="15000" />
-      <workItem from="1557168526746" duration="2810000" />
+      <workItem from="1557168526746" duration="3060000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28580000" />
+    <option name="totallyTimeSpent" value="28830000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="993" y="27" width="927" height="1053" extended-state="4" />
@@ -285,7 +271,7 @@
       <window_info id="JavaEE:App" order="5" side_tool="true" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info id="Designer" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="8" visible="true" weight="0.27355278" />
+      <window_info content_ui="combo" id="Project" order="8" visible="true" weight="0.27355278" />
       <window_info id="Structure" order="9" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -293,7 +279,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="4" />
       <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info anchor="bottom" id="Terminal" order="6" visible="true" weight="0.3297062" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="6" visible="true" weight="0.3304253" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.15995647" />
       <window_info anchor="bottom" id="Run" order="9" weight="0.3297062" />
@@ -588,7 +574,7 @@
     <entry file="file://$PROJECT_DIR$/pl.agh.edu.soa.lab1-ejb/src/main/java/controllers/Conroller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="24" column="42" lean-forward="true" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
