@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="pl.agh.edu.soa.lab1-web:war exploded">
+    <output-path>$PROJECT_DIR$/pl.agh.edu.soa.lab1-web/target/pl.agh.edu.soa.lab1-web</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>pl.agh.edu.soa.lab1-web</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="pl.agh.edu.soa.lab1-web" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/pl.agh.edu.soa.lab1-web/target/pl.agh.edu.soa.lab1-web/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="pl.agh.edu.soa.lab1-web/web/Web" />
+    </root>
+  </artifact>
+</component>

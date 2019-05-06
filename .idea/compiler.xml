@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="pl.agh.edu.soa.lab1-connector" />
+        <module name="pl.agh.edu.soa.lab1-ear" />
+        <module name="pl.agh.edu.soa.lab1-ejb" />
+        <module name="pl.agh.edu.soa.lab1-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="pl.agh.edu.soa.lab1" target="1.7" />
+      <module name="pl.agh.edu.soa.lab1-connector" target="8" />
+      <module name="pl.agh.edu.soa.lab1-ear" target="1.7" />
+      <module name="pl.agh.edu.soa.lab1-ejb" target="8" />
+      <module name="pl.agh.edu.soa.lab1-web" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

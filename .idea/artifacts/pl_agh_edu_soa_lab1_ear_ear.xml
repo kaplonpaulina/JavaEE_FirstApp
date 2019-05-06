@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="ear" name="pl.agh.edu.soa.lab1-ear:ear">
+    <output-path>$PROJECT_DIR$/pl.agh.edu.soa.lab1-ear/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>pl.agh.edu.soa.lab1-ear</module>
+        <packaging>ear</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="pl.agh.edu.soa.lab1-ear.ear">
+      <element id="artifact" artifact-name="pl.agh.edu.soa.lab1-ear:ear exploded" />
+    </root>
+  </artifact>
+</component>
