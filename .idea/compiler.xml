@@ -9,6 +9,7 @@
         <module name="pl.agh.edu.soa.lab1-connector" />
         <module name="pl.agh.edu.soa.lab1-ear" />
         <module name="pl.agh.edu.soa.lab1-ejb" />
+        <module name="pl.agh.edu.soa.lab1-models" />
         <module name="pl.agh.edu.soa.lab1-web" />
       </profile>
     </annotationProcessing>
@@ -17,7 +18,8 @@
       <module name="pl.agh.edu.soa.lab1-connector" target="8" />
       <module name="pl.agh.edu.soa.lab1-ear" target="1.7" />
       <module name="pl.agh.edu.soa.lab1-ejb" target="8" />
-      <module name="pl.agh.edu.soa.lab1-web" target="1.7" />
+      <module name="pl.agh.edu.soa.lab1-models" target="1.7" />
+      <module name="pl.agh.edu.soa.lab1-web" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

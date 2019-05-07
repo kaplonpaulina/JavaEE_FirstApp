@@ -2,7 +2,10 @@ package models;
 
 import javax.annotation.PostConstruct;
 import javax.ejb.Singleton;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 @Singleton
 public class University {
@@ -20,7 +23,7 @@ public class University {
         students.put(s.getId(), s);
     }
 
-    public void addStudent(int id, String name, char gender, String photo, String faculty, List<String> courses, float grade){
+    public void addStudent(int id, String name, String gender, String photo, String faculty, List<String> courses, float grade){
         Student newStudent = new Student(id, name, gender, photo, faculty, courses, grade);
         students.put(id,newStudent);
     }

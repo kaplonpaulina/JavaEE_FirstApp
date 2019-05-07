@@ -1,4 +1,4 @@
-package models;
+package models_ejb;
 
 import javax.xml.bind.annotation.*;
 import java.util.List;

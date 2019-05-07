@@ -13,6 +13,12 @@
         <element id="directory" name="classes">
           <element id="module-output" name="pl.agh.edu.soa.lab1-web" />
         </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="pl.agh.edu.soa.lab1-models-1.0.jar">
+            <element id="module-output" name="pl.agh.edu.soa.lab1-models" />
+          </element>
+          <element id="library" level="project" name="Maven: org.jboss.spec.javax.ejb:jboss-ejb-api_3.2_spec:1.0.0.Final" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/pl.agh.edu.soa.lab1-web/target/pl.agh.edu.soa.lab1-web/META-INF/MANIFEST.MF" />

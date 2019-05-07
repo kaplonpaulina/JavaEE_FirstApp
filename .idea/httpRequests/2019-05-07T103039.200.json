@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "name",
+    "gender": "f",
+    "photo": "photo",
+    "faculty": "wiet",
+    "grades": 4.0,
+    "course": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "name",
+    "gender": "f",
+    "photo": "photo",
+    "faculty": "wiet",
+    "grades": 4.0,
+    "course": [
+      "a",
+      "b"
+    ]
+  }
+]

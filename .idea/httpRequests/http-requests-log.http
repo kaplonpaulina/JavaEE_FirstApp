@@ -1,0 +1,7 @@
+GET http://localhost:8080/pl.agh.edu.soa.lab1-web/api/MyApi/students
+Accept: application/json
+
+<> 2019-05-07T103039.200.json
+
+###
+

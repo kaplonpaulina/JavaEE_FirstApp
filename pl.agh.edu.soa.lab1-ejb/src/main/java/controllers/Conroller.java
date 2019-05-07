@@ -1,7 +1,7 @@
 package controllers;
 
-import models.Student;
-import models.University;
+import models_ejb.Student;
+import models_ejb.University;
 import org.jboss.ws.api.annotation.WebContext;
 
 import javax.annotation.security.DeclareRoles;

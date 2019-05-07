@@ -37,6 +37,7 @@
         <module>pl.agh.edu.soa.lab1-web</module>
         <module>pl.agh.edu.soa.lab1-ear</module>
         <module>pl.agh.edu.soa.lab1-connector</module>
+        <module>pl.agh.edu.soa.lab1-models</module>
     </modules>
 
     <properties>
@@ -87,6 +88,13 @@
                 <artifactId>pl.agh.edu.soa.lab1-connector</artifactId>
                 <version>${project.version}</version>
                 <type>ejb</type>
+            </dependency>
+
+            <!-- models -->
+            <dependency>
+                <groupId>pl.agh.edu.soa.lab1</groupId>
+                <artifactId>pl.agh.edu.soa.lab1-models</artifactId>
+                <version>1.0</version>
             </dependency>
 
             <!-- Define the version of the WAR so that we don't need to repeat 

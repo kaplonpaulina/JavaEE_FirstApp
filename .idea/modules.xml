@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/pl.agh.edu.soa.lab1-connector/pl.agh.edu.soa.lab1-connector.iml" filepath="$PROJECT_DIR$/pl.agh.edu.soa.lab1-connector/pl.agh.edu.soa.lab1-connector.iml" />
       <module fileurl="file://$PROJECT_DIR$/pl.agh.edu.soa.lab1-ear/pl.agh.edu.soa.lab1-ear.iml" filepath="$PROJECT_DIR$/pl.agh.edu.soa.lab1-ear/pl.agh.edu.soa.lab1-ear.iml" />
       <module fileurl="file://$PROJECT_DIR$/pl.agh.edu.soa.lab1-ejb/pl.agh.edu.soa.lab1-ejb.iml" filepath="$PROJECT_DIR$/pl.agh.edu.soa.lab1-ejb/pl.agh.edu.soa.lab1-ejb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pl.agh.edu.soa.lab1-models/pl.agh.edu.soa.lab1-models.iml" filepath="$PROJECT_DIR$/pl.agh.edu.soa.lab1-models/pl.agh.edu.soa.lab1-models.iml" />
       <module fileurl="file://$PROJECT_DIR$/pl.agh.edu.soa.lab1-web/pl.agh.edu.soa.lab1-web.iml" filepath="$PROJECT_DIR$/pl.agh.edu.soa.lab1-web/pl.agh.edu.soa.lab1-web.iml" />
     </modules>
   </component>
