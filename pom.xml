@@ -38,6 +38,7 @@
         <module>pl.agh.edu.soa.lab1-ear</module>
         <module>pl.agh.edu.soa.lab1-connector</module>
         <module>pl.agh.edu.soa.lab1-models</module>
+        <module>pl.agh.edu.soa.lab1-rest-connector</module>
     </modules>
 
     <properties>
@@ -88,6 +89,12 @@
                 <artifactId>pl.agh.edu.soa.lab1-connector</artifactId>
                 <version>${project.version}</version>
                 <type>ejb</type>
+            </dependency>
+            <!-- rest-connector -->
+            <dependency>
+                <groupId>pl.agh.edu.soa.lab1</groupId>
+                <artifactId>pl.agh.edu.soa.lab1-rest-connector</artifactId>
+                <version>1.0</version>
             </dependency>
 
             <!-- models -->

@@ -4,12 +4,13 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.Application;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import javax.ws.rs.ext.ExceptionMapper;
+
+import models.Credentials;
 import models.Student;
 import models.University;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 
@@ -37,8 +38,8 @@ public class RestService extends Application {
     @GET
     @Path("/student")
     @Produces(MediaType.APPLICATION_JSON)
-    public Student getStudent() {
-        return new Student(1, "name", "f", "photo", "wiet", new ArrayList<>(Arrays.asList("a", "b")), 4);
+    public Student getStudent(@QueryParam("id") int id) {
+        return university.get(id);
     }
 
     @GET
@@ -52,7 +53,7 @@ public class RestService extends Application {
         university.addStudent(s);
         university.addStudent(ss);
 
-        List<Student> students = new ArrayList<>();
+        List<Student> students;
 
         switch (gender) {
             case "male":
@@ -77,16 +78,71 @@ public class RestService extends Application {
     }
 
 
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("/addStudent")
+    public String addStudent( Student student){
+        university.addStudent(student);
+        return "added";
+    }
+
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("/addStudent")
+    public String editStudent(@QueryParam("id") int id, Student student){
+        university.delStudent(id);
+        university.addStudent(student);
+        return "edited";
+    }
 
 
-//    @PUT
-//    @Consumes(MediaType.APPLICATION_JSON)
-//    @Path("/addStudent")
-//    public void addStudent(@QueryParam("jsn") String json) {
-//        //university.addStudent(id, name, gender, photo, faculty, new ArrayList<String>(Arrays.asList("aa","bb")), grades);
-////return;
-//        //System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
-//    }
+
+
+
+
+
+
+
+
+    @POST
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+    public Response authenticateUser(Credentials credentials) {
+
+        String username = credentials.getUsername();
+        String password = credentials.getPassword();
+        try {
+            authenticate(username, password);
+
+            String token = issueToken(username);
+
+            return Response.ok(token).build();
+
+        } catch (Exception e) {
+            return Response.status(Response.Status.FORBIDDEN).build();
+        }
+    }
+
+    private void authenticate(String username, String password) throws Exception {
+
+        Map<String,String> users = new HashMap<>();
+        users.put("ppp","ppp");
+
+        if(!users.get(username).equals(password)){
+            throw new Exception("no such user");
+        }
+    }
+
+    private String issueToken(String username) {
+        // Issue a token (can be a random String persisted to a database or a JWT token)
+        // The issued token must be associated to a user
+        // Return the issued token
+
+        return username+"123";
+
+    }
 
 
 }
