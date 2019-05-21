@@ -23,7 +23,7 @@ public class University {
         students.put(s.getId(), s);
     }
 
-    public void addStudent(int id, String name, String gender, String photo, String faculty, List<String> courses, float grade){
+    public void addStudent(int id, String name, String gender, byte[] photo, String faculty, List<String> courses, float grade){
         Student newStudent = new Student(id, name, gender, photo, faculty, courses, grade);
         students.put(id,newStudent);
     }

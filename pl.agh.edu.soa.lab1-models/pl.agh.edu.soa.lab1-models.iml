@@ -12,5 +12,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: org.jboss.spec.javax.ejb:jboss-ejb-api_3.2_spec:1.0.1.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.2.Final" level="project" />
+    <orderEntry type="library" name="Maven: javax.persistence:javax.persistence-api:2.2" level="project" />
+    <orderEntry type="library" name="Maven: org.jboss.resteasy:jaxrs-api:3.0.12.Final" level="project" />
   </component>
 </module>

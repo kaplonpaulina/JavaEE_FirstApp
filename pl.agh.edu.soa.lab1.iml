@@ -4,9 +4,12 @@
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/pl.agh.edu.soa.lab1-rest-connector/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/pl.agh.edu.soa.lab1-rest-connector/src/main/resources" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.jboss.resteasy:jaxrs-api:3.0.12.Final" level="project" />
   </component>
 </module>

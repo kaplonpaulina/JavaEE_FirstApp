@@ -1,3 +1,4 @@
-models/Student.class
-models/Credentials.class
 models/University.class
+models/Users.class
+models/UserCredentials.class
+models/Student.class

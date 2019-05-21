@@ -11,7 +11,7 @@ public class Student {
     private int id;
     private String name;
     private String gender;
-    private String photo;
+    private byte[] photo;
     private String faculty;
     @XmlElementWrapper(name = "CourseList")
     @XmlElement(name = "course")
@@ -21,7 +21,7 @@ public class Student {
     public Student() {
     }
 
-    public Student(int id, String name, String gender, String photo, String faculty, List<String> courses, float grades) {
+    public Student(int id, String name, String gender, byte[] photo, String faculty, List<String> courses, float grades) {
         this.id = id;
         this.name = name;
         this.gender = gender;
@@ -54,11 +54,11 @@ public class Student {
         this.name = name;
     }
 
-    public String getPhoto() {
+    public byte[] getPhoto() {
         return photo;
     }
 
-    public void setPhoto(String photo) {
+    public void setPhoto(byte[] photo) {
         this.photo = photo;
     }
 

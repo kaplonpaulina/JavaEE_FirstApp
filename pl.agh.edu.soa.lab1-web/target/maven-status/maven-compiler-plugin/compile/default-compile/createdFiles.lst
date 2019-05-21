@@ -1,1 +1,8 @@
+SimpleKeyGenerator.class
+JWTTokenNeededFilter.class
+UserAuth.class
+KeyGenerator.class
 RestService.class
+JWTTokenNeeded.class
+ProtobufProvider.class
+ProtobufMediaType.class
