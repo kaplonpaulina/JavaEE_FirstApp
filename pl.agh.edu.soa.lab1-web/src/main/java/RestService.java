@@ -1,14 +1,22 @@
 
 import javax.inject.Inject;
+import javax.validation.Valid;
+import javax.validation.constraints.NotNull;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Application;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import com.google.protobuf.ByteString;
+import com.google.protobuf.DescriptorProtos;
 import models.Student;
+import models.StudentP;
 import models.University;
 
 import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.lang.annotation.Annotation;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -37,7 +45,7 @@ public class RestService extends Application {
     @GET
     @Path("/student")
     @Produces(MediaType.APPLICATION_JSON)
-    public Student getStudent(@QueryParam("id") int id) {
+    public Student getStudent(@NotNull @QueryParam("id") int id) {
         return university.get(id);
     }
 
@@ -91,6 +99,19 @@ public class RestService extends Application {
         return "added";
     }
 
+
+
+    @POST
+    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("/addStudent")
+    @JWTTokenNeeded
+    public Response addStudent(@NotNull @FormParam("id") Integer id, @FormParam("name") String name, @FormParam("gender") String gender, @FormParam("photo") String photo,@FormParam("faculty") String faculty,@FormParam("grades") String grades ){
+        Student s = new Student(id,name,gender,null, faculty,null, 2);
+        university.addStudent(s);
+        return Response.status(Response.Status.CREATED).entity(s).build();
+    }
+
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
@@ -102,6 +123,37 @@ public class RestService extends Application {
         return "edited";
     }
 
+
+    @GET
+    @Path("/proto")
+    public Response getProto(@QueryParam("id") int id) {
+
+        Student s = university.get(id);
+        if(s==null){
+            return Response.status(Response.Status.NOT_FOUND).build();
+        }
+
+        ProtobufProvider provider = new ProtobufProvider();
+        Annotation[] EMPTY_ANNOTATIONS = {};
+
+        //StudentP.StudentProto sp = StudentP.StudentProto.newBuilder().setId(s.getId()).setName(s.getName()).setGender(s.getGender()).setFaculty(s.getFaculty()).setPhoto(ByteString.copyFrom(s.getPhoto())).setCourse(0,"soa").setGrades(String.valueOf(s.getGrades())).build();
+        StudentP.StudentProto sp = StudentP.StudentProto.newBuilder().setId(s.getId()).setName(s.getName()).setGender(s.getGender()).setFaculty(s.getFaculty()).setPhoto(ByteString.copyFrom(s.getPhoto())).setGrades(String.valueOf(s.getGrades())).build();
+
+        final byte[] buf;
+        try(final ByteArrayOutputStream os = new ByteArrayOutputStream()){
+            provider.writeTo(sp, sp.getClass(), null, EMPTY_ANNOTATIONS, ProtobufMediaType.MEDIA_TYPE, null, os);
+            buf = os.toByteArray();
+            return Response.ok().entity(buf).type("application/x-protobuf").build();
+
+
+        } catch (IOException e) {
+
+            e.printStackTrace();
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).build();
+        }
+
+
+    }
 
 
 

@@ -1,5 +1,8 @@
 syntax = "proto3";
 
+
+
+
 message StudentProto {
     int32 id = 1;
     string name = 2;
@@ -7,7 +10,7 @@ message StudentProto {
     string faculty = 4;
     bytes photo = 5;
     repeated string course = 6;
-    float grades = 7;
+    string grades = 7;
 }
 
 
