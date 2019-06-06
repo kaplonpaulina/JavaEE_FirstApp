@@ -15,7 +15,7 @@ GET http://localhost:8080/pl.agh.edu.soa.lab1-web/api/MyApi/students?gender=f
 Accept: application/json
 
 ### Get request with a header
-GET http://localhost:8080/pl.agh.edu.soa.lab1-web/api/MyApi/student?id=309
+GET http://localhost:8080/pl.agh.edu.soa.lab1-web/api/MyApi/jpaModels.StudentJPA?id=309
 Accept: application/json
 
 
@@ -37,6 +37,7 @@ Content-Type: application/json
 ### Get request with a header
 GET http://localhost:8080/pl.agh.edu.soa.lab1-web/api/MyApi/proto?id=3013
 Accept: application/json
+
 
 
 ### Send POST request with json body

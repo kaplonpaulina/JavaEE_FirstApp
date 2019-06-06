@@ -6,5 +6,7 @@ models/UserCredentials.class
 models/StudentP.class
 models/StudentP$1.class
 models/Student.class
+models/Faculty.class
 models/StudentP$StudentProto$Builder.class
 models/StudentP$StudentProto.class
+models/Faculty$FacultyBuilder.class
